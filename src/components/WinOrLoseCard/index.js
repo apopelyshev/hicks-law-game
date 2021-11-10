@@ -20,6 +20,15 @@ class WinOrLoseCard extends Component {
 					<h1 className="winOrLose-status">{gameStatus}</h1>
 					<p className="winOrLose-label">{ScoreLabel}</p>
 					<p className="winOrLose-current-score">{times.length}/5</p>
+					<button
+						className="winOrLose-button"
+						type="button"
+						onClick={onClickPlayAgain}
+					>
+						Play Again
+					</button>
+				</div>
+				<div className="winOrLose-stats-container">
 					<h4>Stats:</h4>
 					<ul>
 						{times.map((el, ind) => (
@@ -28,13 +37,6 @@ class WinOrLoseCard extends Component {
 							</li>
 						))}
 					</ul>
-					<button
-						className="winOrLose-button"
-						type="button"
-						onClick={onClickPlayAgain}
-					>
-						Play Again
-					</button>
 				</div>
 				<div className="winOrLose-image-container">
 					<img

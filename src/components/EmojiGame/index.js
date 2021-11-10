@@ -116,9 +116,6 @@ class EmojiGame extends Component {
 
 	componentDidUpdate(_, prevState) {
 		if (prevState.currRound !== this.state.currRound) {
-			console.log(
-				`Prev round: ${prevState.currRound}, now - ${this.state.currRound}`
-			)
 			this.setState({
 				lastRoundStartTime: Date.now(),
 			})
